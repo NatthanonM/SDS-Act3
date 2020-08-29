@@ -40,12 +40,12 @@ def main(args):
 
     # Timer
     timestamps = []
-    start = time.perf_counter_ns()
 
     # Write random file to s3
     print('Writing file to s3...')
     for i in range(iteration):
         f = open(filename, "rb")
+        start = time.perf_counter_ns()
         s3.upload_fileobj(
             f, BUCKET_NAME, "%s/random_copy_%i.txt" % (baseFilename, i))
 
