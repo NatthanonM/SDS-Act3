@@ -27,6 +27,7 @@ def main(args):
         f = open(filename, "r")
     except:
         print("Error: %s file not found" % filename)
+        exit(1)
 
     # Manage path
     if os.path.exists(writting_path):
@@ -34,6 +35,7 @@ def main(args):
             shutil.rmtree(writting_path)
         except OSError as e:
             print("Error: %s : %s" % (writting_path, e.strerror))
+            exit(1)
         finally:
             os.makedirs(writting_path)
     else:
@@ -67,6 +69,7 @@ def main(args):
     f.close()
 
     print("Done")
+    exit(0)
 
 
 if __name__ == "__main__":
