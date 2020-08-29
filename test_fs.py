@@ -45,6 +45,7 @@ def main(args):
     timestamps = []
     start = time.perf_counter_ns()
 
+    # Read random file
     for i in range(iteration):
         f1 = open(os.path.join(writting_path, "random_copy_%i.txt" % i), "w")
         f.seek(0)  # cursor back to the beginning
