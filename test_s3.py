@@ -40,16 +40,20 @@ def main(args):
 
     # Timer
     timestamps = []
+    start = time.perf_counter_ns()
 
     # Write random file to s3
     print('Writing file to s3...')
     for i in range(iteration):
+        startRead = time.perf_counter_ns()
         f = open(filename, "rb")
-        start = time.perf_counter_ns()
+        endRead = time.perf_counter_ns()
+        readTime = startRead - endRead
+
         s3.upload_fileobj(
             f, BUCKET_NAME, "%s/random_copy_%i.txt" % (baseFilename, i))
 
-        diffTime = str(time.perf_counter_ns()-start)
+        diffTime = str(time.perf_counter_ns()-start-readTime)
         # Format time stamp
         if len(diffTime) > 9:
             diffTime = diffTime[:-9]+"."+diffTime[-10:]
