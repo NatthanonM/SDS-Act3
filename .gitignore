@@ -130,3 +130,7 @@ dmypy.json
 
 # VSCode
 .vscode
+
+# Random file
+random_large.txt
+random_small.txt
