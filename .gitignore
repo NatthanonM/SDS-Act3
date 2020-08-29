@@ -134,3 +134,5 @@ dmypy.json
 # Random file
 random_large.txt
 random_small.txt
+/random_large
+/random_small
