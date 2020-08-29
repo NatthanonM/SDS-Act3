@@ -17,14 +17,6 @@ def main(args):
     iteration = int(iteration)
     baseFilename = ".".join((filename.strip().split("."))[:-1])
 
-    # WARNING
-    # print("WARNING!!")
-    # print("The folder name \"%s\" in bucket name \"%s\" on S3 and its contents will be removed" %
-    #       (baseFilename, BUCKET_NAME))
-    # confirm = input("Continue? (Y/n):")
-    # if confirm != "Y":
-    #     exit(0)
-
     # Read random file from s3
     print('Reading file from s3...')
     try:
