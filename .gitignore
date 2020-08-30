@@ -133,6 +133,8 @@ dmypy.json
 
 # Random file
 random_large.txt
+random_medium.txt
 random_small.txt
 /random_large
 /random_small
+/random_medium
