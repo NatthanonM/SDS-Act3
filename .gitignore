@@ -135,6 +135,16 @@ dmypy.json
 random_large.txt
 random_medium.txt
 random_small.txt
+random_1MB.txt
+random_2MB.txt
+random_4MB.txt
+random_8MB.txt
+random_16MB.txt
 /random_large
 /random_small
 /random_medium
+/random_1MB
+/random_2MB
+/random_4MB
+/random_8MB
+/random_16MB
