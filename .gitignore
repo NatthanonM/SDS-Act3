@@ -140,6 +140,9 @@ random_2MB.txt
 random_4MB.txt
 random_8MB.txt
 random_16MB.txt
+random_32MB.txt
+random_64MB.txt
+random_128MB.txt
 /random_large
 /random_small
 /random_medium
@@ -148,3 +151,6 @@ random_16MB.txt
 /random_4MB
 /random_8MB
 /random_16MB
+/random_32MB
+/random_64MB
+/random_128MB
